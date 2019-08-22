@@ -1,0 +1,37 @@
+.user-info {
+  position: relative;
+  display: flex;
+  font-size: $mainFontSize;
+  padding: 0px 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/down-semibold_icon.svg)no-repeat;
+  }
+
+  &__avatar {
+    margin: 0px 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%
+  }
+
+  &__person-data {
+
+  }
+
+  &__name {
+    color: $inverted-font-color;
+  }
+
+  &__company {
+    display: block;
+    color: rgba(255,255,255,0.64);
+  }
+}
+
