@@ -1,0 +1,11 @@
+@mixin disabled {
+  cursor: not-allowed;
+  border: 1px solid $border-color;
+  color: $black-light-color;
+}
+
+@mixin focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid $highlight-color;
+}

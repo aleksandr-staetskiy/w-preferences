@@ -1,1 +1,52 @@
-$color: red;
+// Font
+$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontSize            : 52.2%;
+$secondaryFontSize       : 12px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.4;
+$headeing-1              : 28px;
+$headeing-2              : 20px;
+$headeing-3              : 28px;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 980px;
+$tableWidth              : 768px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+// Main colors
+$main-font-color         : rgba(0, 0, 0, 0.9);
+$inverted-font-color     : rgba(255, 255, 255, 0.9);
+$panel-color             : #284159;
+$highlight-color         : #4488FF;
+$highlight-color-2       : #3D7AE6;
+$highlight-color-3       : #69A0F6;
+$error-color             : #F15866;
+$grey-color              : #ABABAB;
+$border-color            : rgba(0, 0, 0, 0.16);
+$hinted-color            : rgba(0, 0, 0, 0.32);
+$black-light-color       : rgba(0, 0, 0, 0.04);
+
+// Ширины
+
+$screen-xs:                   0;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   992px;
+$screen-xl:                   1200px;
+$screen-xxl:                  1800px;
+
+$container-sm:                100%;
+$container-md:                100%;
+$container-lg:                $screen-lg - 30;
+$container-xl:                $screen-xl - 30;
+$container-xxl:               $screen-xxl - 30;
+
+
+
+// Модульная сетка
+
+$grid-columns:                12;
+$grid-gutter-width:           30px;

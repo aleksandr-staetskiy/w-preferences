@@ -1,0 +1,35 @@
+.button {
+  cursor: pointer;
+  display: block;
+  padding: 6px 16px;
+  min-width: 120px;
+  background: $highlight-color;
+  border: none;
+  border-radius: 2px;
+  transition: 0.4s ease-in;
+
+
+  &__text {
+    color: $inverted-font-color; 
+  }
+
+  &:hover {
+    background: $highlight-color-3;
+  }
+
+  &:focus {
+    outline: none;
+    background: $highlight-color-3;
+  }
+
+  &:active {
+    outline: none;
+    background: $highlight-color-2;
+  }
+
+  &:disabled {
+    @include disabled;
+    background: transparent;
+    color: $hinted-color;
+  }
+}
