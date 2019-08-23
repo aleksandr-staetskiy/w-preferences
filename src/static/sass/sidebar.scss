@@ -3,9 +3,10 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 256px;
+  width: 226px;
   color: $inverted-font-color;
   background: $panel-color;
+  overflow-y: scroll;
 
   &__inner {
     margin-top: 60px;
@@ -37,6 +38,7 @@
 
   &__title {
     cursor: default;
+    margin-bottom: 5px;
     &:hover {
       background: none;
     }
