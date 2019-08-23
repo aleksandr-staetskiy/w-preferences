@@ -5,6 +5,7 @@
   right: 0;
   top: 0;
   background-color: $panel-color;
+  z-index: 16;
 
   &__inner {
     display: flex;

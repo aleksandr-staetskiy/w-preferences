@@ -1,3 +1,20 @@
 html {
   font-size: $pageFontSize;
 }
+
+body {
+  background: $panel-color;
+}
+
+.page__inner {
+  padding: 0px 15px;
+}
+
+.page__content {
+  position: relative;
+  height: 7000px;
+  margin-left: 216px;
+  margin-top: 60px;
+  border-radius: 2px;
+  background: $inverted-font-color;
+}
