@@ -1,4 +1,5 @@
 html {
+  font-family: 'Open Sans Regular';
   font-size: $pageFontSize;
 }
 
@@ -12,10 +13,14 @@ body {
 
 .page__content {
   position: relative;
-  height: 7000px;
+  height: 2000px;
   margin-left: 216px;
-  margin-top: 60px;
+  margin-top: 67px;
   border-radius: 2px;
-  background: $inverted-font-color;
+  background: #fff;
   z-index: 15;
+}
+
+.general-title {
+  font-size: 2rem;
 }

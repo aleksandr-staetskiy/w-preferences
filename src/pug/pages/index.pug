@@ -1,9 +1,45 @@
 extends ../layout/layout.pug
 block content
-  h1 start
+  section.profile-details
+    .profile-details__inner
+      h1.general-title.profile-details__title Profile details
+      .profile-details__profile-link
+        .profile-link(href='')
+          img.profile-link__avatar.profile-link__avatar--lg(src='./static/img/john.jpg' alt='john')
+          .profile-link__person-data
+            span.profile-link__name.profile-link__name--lg Jhon Smith
+            span.profile-link__company.profile-link__company--lg UI developer (crafting Team)
 
- 
-         
-          
+      .profile-details__biography
+          form.form(action="")
+            .form__container
+              .form__grid
+                .form__group.form__cell
+                  label.form__label First name
+                  input.form__input(placeholder="John")
+                .form__group.form__cell
+                  label.form__label Last name
+                  input.form__input(placeholder="Smith")
+                .form__group.form__cell
+                  label.form__label Company name
+                  input.form__input(placeholder="Wrike")
+                .form__group.form__cell
+                  label.form__label Job title
+                  input.form__input(placeholder="UI Developer (crafting team)")
+                .form__group.form__cell
+                  label.form__label Location
+                  input.form__input(placeholder="Saint-Petersburg")
+                .form__group.form__cell
+                  label.form__label Phone number
+                  input.form__input(placeholder="+7 (923) 345-34-32")
+            .form__button-wrap   
+              button.button Save changes
+              button.button.button--cancellation(href="") Cancel
+
+
+
+
+
+
 
 

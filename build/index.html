@@ -12,8 +12,8 @@
       <div class="page__inner">
         <header class="header">
           <div class="header__container">
-            <div class="header__inner"><a class="header__logo" href="#"><img class="logo" src="./static/img/logo__legacy_icon.svg" alt="wrike"></a><a class="user-info" href=""><img class="user-info__avatar" src="./static/img/john.jpg" alt="john">
-                <div class="user-info__person-data"><span class="user-info__name">Jhon</span><span class="user-info__company">Wrike Team</span></div></a></div>
+            <div class="header__inner"><a class="header__logo" href="#"><img class="logo" src="./static/img/logo__legacy_icon.svg" alt="wrike"></a><a class="profile-link" href=""><img class="profile-link__avatar" src="./static/img/john.jpg" alt="john">
+                <div class="profile-link__person-data"><span class="profile-link__name">Jhon</span><span class="profile-link__company">Wrike Team</span></div></a></div>
           </div>
         </header>
         <aside class="sidebar">
@@ -47,7 +47,52 @@
           </div>
         </aside>
         <main class="page__content">
-          <h1>start</h1>
+          <section class="profile-details">
+            <div class="profile-details__inner">
+              <h1 class="general-title profile-details__title">Profile details</h1>
+              <div class="profile-details__profile-link">
+                <div class="profile-link" href=""><img class="profile-link__avatar profile-link__avatar--lg" src="./static/img/john.jpg" alt="john">
+                  <div class="profile-link__person-data"><span class="profile-link__name profile-link__name--lg">Jhon Smith</span><span class="profile-link__company profile-link__company--lg">UI developer (crafting Team)</span></div>
+                </div>
+              </div>
+              <div class="profile-details__biography">
+                <form class="form" action="">
+                  <div class="form__container">
+                    <div class="form__grid">
+                      <div class="form__group form__cell">
+                        <label class="form__label">First name</label>
+                        <input class="form__input" placeholder="John">
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Last name</label>
+                        <input class="form__input" placeholder="Smith">
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Company name</label>
+                        <input class="form__input" placeholder="Wrike">
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Job title</label>
+                        <input class="form__input" placeholder="UI Developer (crafting team)">
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Location</label>
+                        <input class="form__input" placeholder="Saint-Petersburg">
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Phone number</label>
+                        <input class="form__input" placeholder="+7 (923) 345-34-32">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__button-wrap">  
+                    <button class="button">Save changes</button>
+                    <button class="button button--cancellation" href="">Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

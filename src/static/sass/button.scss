@@ -1,6 +1,7 @@
 .button {
   cursor: pointer;
   display: block;
+  color: $inverted-font-color;
   padding: 6px 16px;
   min-width: 120px;
   background: $highlight-color;
@@ -31,5 +32,14 @@
     @include disabled;
     background: transparent;
     color: $hinted-color;
+  }
+
+  &--cancellation {
+    color: $main-font-color;
+    background: transparent;
+    &:hover {
+      color: $hinted-color  ;
+      background: transparent;
+    }
   }
 }

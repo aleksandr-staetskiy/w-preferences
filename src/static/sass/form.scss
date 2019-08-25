@@ -1,18 +1,14 @@
-.settings-panel__inner {
-  width: 500px;
-}
-
 .form {
 
   &__input {
     width: 100%;
-    padding: 5px 10px; 
+    padding: 7px 10px; 
     background: $inverted-font-color;
     border: 1px solid $hinted-color; 
     border-radius: 2px;
 
-    &:placeholder {
-      color: $hinted-color;
+    &::placeholder {
+      color: $main-font-color;
     }
 
     &:focus {
@@ -32,9 +28,12 @@
     &:disabled {
       @include disabled;
     }
+
+    
   }
 
   &__label {
+    color: $main-font-color;
     font-size: $secondaryFontSize;
 
     &:invalid {
@@ -49,6 +48,25 @@
       color: $black-light-color;
     }
   }
+
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__grid {
+    justify-content: space-between;
+    @include row($grid-gutter-width, 10px, 12px, 26px, 28px, 25px);
+  }
+
+  &__cell {
+    @include col(md, 6, $grid-columns, 12px); 
+    @include col(lg, 6, $grid-columns, 26px); 
+    @include col(xl, 6, $grid-columns, 25px);
+  }
+
+  &__button-wrap {
+    display: flex;
+  }   
 }
 
 
@@ -130,7 +148,8 @@
 			color: #fff;
 			transition: all ease-in-out .3s;
 		}
-	}
+  }
+  
 }
 
 
