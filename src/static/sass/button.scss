@@ -41,5 +41,10 @@
       color: $hinted-color  ;
       background: transparent;
     }
+
+    &:focus {
+      outline: none;
+      background: none
+    }
   }
 }

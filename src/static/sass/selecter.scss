@@ -1,5 +1,4 @@
 // SELECTER
-$bdrs: 4px;
 $accent-color: #007bff;
 
 
@@ -16,11 +15,25 @@ $accent-color: #007bff;
   align-items: center;
   cursor: pointer;
   transition: border-color .2s ease;
-  
-  &:hover, &:focus {
-    border-color: $accent-color;
-    outline: none;
+
+  &:focus {
+    @include focus;
   }
+
+  &:active {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid $highlight-color;
+  }
+
+  &:invalid {
+    border: 1px solid $error-color;
+  }
+
+  &:disabled {
+    @include disabled;
+  } 
+
   &__arrow {
     display: block;
     width: 0;
