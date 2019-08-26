@@ -42,6 +42,28 @@
     &:hover {
       background: none;
     }
+
+    &--personal {
+      &::before  {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 5px;
+        background: url(../../static/img/user-small_icon.svg);
+      }
+    }
+
+    &--account {
+      &::before  {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 5px;
+        background: url(../../static/img/settigns-gearwheel_icon.svg);
+      }
+    }
   }
 
   &__separator {

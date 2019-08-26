@@ -1,6 +1,7 @@
 html {
   font-family: 'Open Sans Regular';
   font-size: $pageFontSize;
+  color: $main-font-color;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 
 .page__content {
   position: relative;
-  height: 2000px;
   margin-left: 216px;
   margin-top: 67px;
   border-radius: 2px;

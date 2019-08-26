@@ -5,40 +5,130 @@ block content
       h1.general-title.profile-details__title Profile details
       .profile-details__profile-link
         .profile-link(href='')
-          img.profile-link__avatar.profile-link__avatar--lg(src='./static/img/john.jpg' alt='john')
-          .profile-link__person-data
-            span.profile-link__name.profile-link__name--lg Jhon Smith
-            span.profile-link__company.profile-link__company--lg UI developer (crafting Team)
+          .profile-link__wrap(href="#")
+            img.profile-link__avatar.profile-link__avatar--lg(src='./static/img/john.jpg' alt='john')
+            .profile-link__person-data
+              span.profile-link__name.profile-link__name--lg Jhon Smith
+              span.profile-link__company.profile-link__company--lg UI developer (crafting Team)
 
       .profile-details__biography
-          form.form(action="")
-            .form__container
-              .form__grid
-                .form__group.form__cell
-                  label.form__label First name
-                  input.form__input(placeholder="John")
-                .form__group.form__cell
-                  label.form__label Last name
-                  input.form__input(placeholder="Smith")
-                .form__group.form__cell
-                  label.form__label Company name
-                  input.form__input(placeholder="Wrike")
-                .form__group.form__cell
-                  label.form__label Job title
-                  input.form__input(placeholder="UI Developer (crafting team)")
-                .form__group.form__cell
-                  label.form__label Location
-                  input.form__input(placeholder="Saint-Petersburg")
-                .form__group.form__cell
-                  label.form__label Phone number
-                  input.form__input(placeholder="+7 (923) 345-34-32")
-            .form__button-wrap   
-              button.button Save changes
-              button.button.button--cancellation(href="") Cancel
+        form.form(action="")
+          .form__container
+            .form__grid
+              .form__group.form__cell
+                label.form__label First name
+                input.form__input(placeholder="John", type="text")
+              .form__group.form__cell
+                label.form__label Last name
+                input.form__input(placeholder="Smith", type="text")
+              .form__group.form__cell
+                label.form__label Company name
+                input.form__input(placeholder="Wrike", type="text")
+              .form__group.form__cell
+                label.form__label Job title
+                input.form__input(placeholder="UI Developer (crafting team)", type="text")
+              .form__group.form__cell
+                label.form__label Location
+                input.form__input(placeholder="Saint-Petersburg", type="text")
+              .form__group.form__cell
+                label.form__label Phone number
+                input.form__input(placeholder="+7 (923) 345-34-32", type="tel")
+          .form__button-wrap   
+            button.button Save changes
+            button.button.button--cancellation(href="") Cancel
 
 
+      .profile-details__workspace
+        span.profile-details__workspace-title Workspace settings
+        form.form
+          .form__container
+            .form__grid
+              .form__group.form__cell
+                label.form__label Time zone
+                .selecter(data-value='1')
+                  .selecter__input
+                    button.selecter-btn.selecter-btn--val
+                      span.selecter-btn__content
+                        span (GMT+7) Pacific day time
+                      span.selecter-btn__arrow
+                  .selecter__vars
+                    button.selecter-btn.selecter-btn--item(data-value='1')
+                      span.selecter-btn__content
+                        span (GMT+5) Lorem day time
+                    button.selecter-btn.selecter-btn--item(data-value='2')
+                      span.selecter-btn__content
+                        span (GMT+1) Ipsum day time
+                    button.selecter-btn.selecter-btn--item(data-value='3')
+                      span.selecter-btn__content
+                        span (GMT+666) Hell day time
 
+              .form__group.form__cell
+                label.form__label Language
+                .selecter(data-value='1')
+                  .selecter__input
+                    button.selecter-btn.selecter-btn--val
+                      span.selecter-btn__content
+                        span Deutsch
+                      span.selecter-btn__arrow
+                  .selecter__vars
+                    button.selecter-btn.selecter-btn--item(data-value='1')
+                      span.selecter-btn__content
+                        span English
+                    button.selecter-btn.selecter-btn--item(data-value='2')
+                      span.selecter-btn__content
+                        span Français
+                    button.selecter-btn.selecter-btn--item(data-value='3')
+                      span.selecter-btn__content
+                        span Italiano
+                    button.selecter-btn.selecter-btn--item(data-value='4')
+                      span.selecter-btn__content
+                        span Русский
+                    button.selecter-btn.selecter-btn--item(data-value='5')
+                      span.selecter-btn__content
+                        span 日本語
+                    button.selecter-btn.selecter-btn--item(data-value='6')
+                      span.selecter-btn__content
+                        span Dansk
 
+              .form__group.form__cell
+                label.form__label New task created by default as
+                .selecter(data-value='1')
+                  .selecter__input
+                    button.selecter-btn.selecter-btn--val
+                      span.selecter-btn__content
+                        span Backlogged
+                      span.selecter-btn__arrow
+                  .selecter__vars
+                    button.selecter-btn.selecter-btn--item(data-value='1')
+                      span.selecter-btn__content
+                        span Backlogged
+                    button.selecter-btn.selecter-btn--item(data-value='2')
+                      span.selecter-btn__content
+                        span Lorem
+                    button.selecter-btn.selecter-btn--item(data-value='3')
+                      span.selecter-btn__content
+                        span Dolor
+                    button.selecter-btn.selecter-btn--item(data-value='4')
+                      span.selecter-btn__content
+                        span Ipsum
+                    button.selecter-btn.selecter-btn--item(data-value='5')
+                      span.selecter-btn__content
+                        span Random
+                    button.selecter-btn.selecter-btn--item(data-value='6')
+                      span.selecter-btn__content
+                        span Some
+                    button.selecter-btn.selecter-btn--item(data-value='7')
+                      span.selecter-btn__content
+                        span Wow
+
+            .form__grid
+              .form__group.form__cell
+                .form__suggestion
+                  input.form__checkbox(type="checkbox" checked)
+                  span.form__suggestion-descr Show pop-up with suggestion to align the dates of tasks and subtasks.
+                    a.form__link(href="") How does subtask alignment work?
+
+            button.button(disabled) save changes
 
 
 

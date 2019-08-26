@@ -12,8 +12,23 @@
       <div class="page__inner">
         <header class="header">
           <div class="header__container">
-            <div class="header__inner"><a class="header__logo" href="#"><img class="logo" src="./static/img/logo__legacy_icon.svg" alt="wrike"></a><a class="profile-link" href=""><img class="profile-link__avatar" src="./static/img/john.jpg" alt="john">
-                <div class="profile-link__person-data"><span class="profile-link__name">Jhon</span><span class="profile-link__company">Wrike Team</span></div></a></div>
+            <div class="header__inner"><a class="header__logo" href="#"><img class="logo" src="./static/img/logo__legacy_icon.svg" alt="wrike"></a>
+              <div class="profile-link"><a class="profile-link__wrap" href="#"><img class="profile-link__avatar" src="./static/img/john.jpg" alt="john">
+                  <div class="profile-link__person-data profile-link__arrow"><span class="profile-link__name">Jhon</span><span class="profile-link__company">Wrike Team</span></div></a>
+                <div class="profile-link-dropdown">
+                  <div class="profile-link-dropdown__inner"><span class="profile-link-dropdown__department">wrike team</span>
+                    <ul class="profile-link-dropdown__list">
+                      <li class="profile-link-dropdown__item"><a class="profile-link-dropdown__link" href="">Profile Settings</a></li>
+                      <li class="profile-link-dropdown__item"> <a class="profile-link-dropdown__link" href="">Team directory</a></li>
+                      <li class="profile-link-dropdown__item"> <a class="profile-link-dropdown__link" href="">Apps & Integrations</a></li>
+                      <li class="profile-link-dropdown__item"><a class="profile-link-dropdown__link" href="">Mobile apps</a></li>
+                      <li class="profile-link-dropdown__item"> <a class="profile-link-dropdown__link" href="">Help</a></li>
+                    </ul>
+                    <div class="profile-link-dropdown__separator"></div><a class="profile-link-dropdown__logout" href="">Log Out</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </header>
         <aside class="sidebar">
@@ -51,8 +66,10 @@
             <div class="profile-details__inner">
               <h1 class="general-title profile-details__title">Profile details</h1>
               <div class="profile-details__profile-link">
-                <div class="profile-link" href=""><img class="profile-link__avatar profile-link__avatar--lg" src="./static/img/john.jpg" alt="john">
-                  <div class="profile-link__person-data"><span class="profile-link__name profile-link__name--lg">Jhon Smith</span><span class="profile-link__company profile-link__company--lg">UI developer (crafting Team)</span></div>
+                <div class="profile-link" href="">
+                  <div class="profile-link__wrap" href="#"><img class="profile-link__avatar profile-link__avatar--lg" src="./static/img/john.jpg" alt="john">
+                    <div class="profile-link__person-data"><span class="profile-link__name profile-link__name--lg">Jhon Smith</span><span class="profile-link__company profile-link__company--lg">UI developer (crafting Team)</span></div>
+                  </div>
                 </div>
               </div>
               <div class="profile-details__biography">
@@ -61,33 +78,95 @@
                     <div class="form__grid">
                       <div class="form__group form__cell">
                         <label class="form__label">First name</label>
-                        <input class="form__input" placeholder="John">
+                        <input class="form__input" placeholder="John" type="text">
                       </div>
                       <div class="form__group form__cell">
                         <label class="form__label">Last name</label>
-                        <input class="form__input" placeholder="Smith">
+                        <input class="form__input" placeholder="Smith" type="text">
                       </div>
                       <div class="form__group form__cell">
                         <label class="form__label">Company name</label>
-                        <input class="form__input" placeholder="Wrike">
+                        <input class="form__input" placeholder="Wrike" type="text">
                       </div>
                       <div class="form__group form__cell">
                         <label class="form__label">Job title</label>
-                        <input class="form__input" placeholder="UI Developer (crafting team)">
+                        <input class="form__input" placeholder="UI Developer (crafting team)" type="text">
                       </div>
                       <div class="form__group form__cell">
                         <label class="form__label">Location</label>
-                        <input class="form__input" placeholder="Saint-Petersburg">
+                        <input class="form__input" placeholder="Saint-Petersburg" type="text">
                       </div>
                       <div class="form__group form__cell">
                         <label class="form__label">Phone number</label>
-                        <input class="form__input" placeholder="+7 (923) 345-34-32">
+                        <input class="form__input" placeholder="+7 (923) 345-34-32" type="tel">
                       </div>
                     </div>
                   </div>
                   <div class="form__button-wrap">  
                     <button class="button">Save changes</button>
                     <button class="button button--cancellation" href="">Cancel</button>
+                  </div>
+                </form>
+              </div>
+              <div class="profile-details__workspace"><span class="profile-details__workspace-title">Workspace settings</span>
+                <form class="form">
+                  <div class="form__container">
+                    <div class="form__grid">
+                      <div class="form__group form__cell">
+                        <label class="form__label">Time zone</label>
+                        <div class="selecter" data-value="1">
+                          <div class="selecter__input">
+                            <button class="selecter-btn selecter-btn--val"><span class="selecter-btn__content"><span>(GMT+7) Pacific day time</span></span><span class="selecter-btn__arrow"></span></button>
+                          </div>
+                          <div class="selecter__vars">
+                            <button class="selecter-btn selecter-btn--item" data-value="1"><span class="selecter-btn__content"><span>(GMT+5) Lorem day time</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="2"><span class="selecter-btn__content"><span>(GMT+1) Ipsum day time</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="3"><span class="selecter-btn__content"><span>(GMT+666) Hell day time</span></span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">Language</label>
+                        <div class="selecter" data-value="1">
+                          <div class="selecter__input">
+                            <button class="selecter-btn selecter-btn--val"><span class="selecter-btn__content"><span>Deutsch</span></span><span class="selecter-btn__arrow"></span></button>
+                          </div>
+                          <div class="selecter__vars">
+                            <button class="selecter-btn selecter-btn--item" data-value="1"><span class="selecter-btn__content"><span>English</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="2"><span class="selecter-btn__content"><span>Français</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="3"><span class="selecter-btn__content"><span>Italiano</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="4"><span class="selecter-btn__content"><span>Русский</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="5"><span class="selecter-btn__content"><span>日本語</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="6"><span class="selecter-btn__content"><span>Dansk</span></span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__group form__cell">
+                        <label class="form__label">New task created by default as</label>
+                        <div class="selecter" data-value="1">
+                          <div class="selecter__input">
+                            <button class="selecter-btn selecter-btn--val"><span class="selecter-btn__content"><span>Backlogged</span></span><span class="selecter-btn__arrow"></span></button>
+                          </div>
+                          <div class="selecter__vars">
+                            <button class="selecter-btn selecter-btn--item" data-value="1"><span class="selecter-btn__content"><span>Backlogged</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="2"><span class="selecter-btn__content"><span>Lorem</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="3"><span class="selecter-btn__content"><span>Dolor</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="4"><span class="selecter-btn__content"><span>Ipsum</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="5"><span class="selecter-btn__content"><span>Random</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="6"><span class="selecter-btn__content"><span>Some</span></span></button>
+                            <button class="selecter-btn selecter-btn--item" data-value="7"><span class="selecter-btn__content"><span>Wow</span></span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__grid">
+                      <div class="form__group form__cell">
+                        <div class="form__suggestion">
+                          <input class="form__checkbox" type="checkbox" checked><span class="form__suggestion-descr">Show pop-up with suggestion to align the dates of tasks and subtasks.<a class="form__link" href="">How does subtask alignment work?</a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="button" disabled>save changes</button>
                   </div>
                 </form>
               </div>

@@ -3,10 +3,23 @@
   padding: 48px;
 
   &__title {
+    font-family: 'Open Sans Semibold';
+    font-weight: 500;
     margin-bottom: 38px;
   }
 
   &__profile-link {
     margin-bottom: 24px;
+  }
+
+  &__workspace {
+    margin-top: 64px;
+  
+    &-title {
+      display: block;
+      font-family: 'Open Sans Semibold';
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
   }
 }

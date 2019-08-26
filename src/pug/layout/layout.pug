@@ -14,11 +14,28 @@ html(lang="en")
             .header__inner
               a.header__logo(href='#')
                 img.logo(src='./static/img/logo__legacy_icon.svg' alt='wrike')
-              a.profile-link(href='')
-                img.profile-link__avatar(src='./static/img/john.jpg' alt='john')
-                .profile-link__person-data
-                  span.profile-link__name Jhon
-                  span.profile-link__company Wrike Team
+              .profile-link
+                a.profile-link__wrap(href="#")
+                  img.profile-link__avatar(src='./static/img/john.jpg' alt='john')
+                  .profile-link__person-data.profile-link__arrow
+                    span.profile-link__name Jhon
+                    span.profile-link__company Wrike Team
+                .profile-link-dropdown
+                  .profile-link-dropdown__inner
+                    span.profile-link-dropdown__department wrike team
+                    ul.profile-link-dropdown__list
+                      li.profile-link-dropdown__item
+                        a.profile-link-dropdown__link(href="") Profile Settings
+                      li.profile-link-dropdown__item 
+                        a.profile-link-dropdown__link(href="") Team directory
+                      li.profile-link-dropdown__item 
+                        a.profile-link-dropdown__link(href="") Apps & Integrations
+                      li.profile-link-dropdown__item
+                        a.profile-link-dropdown__link(href="") Mobile apps
+                      li.profile-link-dropdown__item 
+                        a.profile-link-dropdown__link(href="") Help
+                    .profile-link-dropdown__separator
+                    a.profile-link-dropdown__logout(href="") Log Out
         aside.sidebar
           .sidebar__inner 
             .sidebar__block
